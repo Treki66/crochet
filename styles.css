@@ -1,0 +1,111 @@
+/* Reset some basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --backgroundColor: #f5d7f8;
+    --headerBackgroundColor: rgb(243, 229, 245);
+    --textColor: black;
+    --headerTextColor: black;
+    --font: 'Pacifico', cursive;;
+}
+
+/* Body and header styling */
+body {
+    font-family: var(--font);
+    background-color: var(--backgroundColor);
+    padding: 0;
+    margin: 0;
+}
+
+/* Header styling */
+header {
+    background-color: var(--headerBackgroundColor);
+    color: var(--textColor);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 10px 10px 50px;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    transition: color 0.5s ease; 
+}
+
+header .header-title {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 15px;
+}
+
+header .header-pages {
+    color: var(--headerTextColor);
+    text-decoration: none;
+    font-size: 16px;
+}
+
+header .header-page:hover {
+    color: var(--backgroundColor);
+}
+
+.creations-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 100px;
+    padding: 40px 20px;
+}
+
+/* Individual creation card */
+.creation-card {
+    background-color: var(--headerBackgroundColor);
+    border: 1px solid black;
+    border-radius: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    transition: transform 0.5s ease;
+}
+
+.creation-card:hover {
+    transform: translateY(-1.5vh);
+}
+
+.creation-image {
+    width: 100%;
+    width: 20vw;
+    height: 50vh;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+.creation-title {
+    font-size: 24px;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    color: black;
+}
+
+.creation-price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.site-footer {
+    text-align: center;
+    color: black;
+    padding: 20px;
+}
